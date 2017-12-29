@@ -400,4 +400,7 @@ in rec {
     '';
     nativeBuildInputs = attrs.nativeBuildInputs ++ [self.pkgs.makeWrapper];
   });
+
+
+  vulcanizedb = callPackage ./vulcanizedb.nix {};
 }
